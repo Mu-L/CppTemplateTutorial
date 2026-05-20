@@ -2001,7 +2001,7 @@ tuple<A*, tuple<const A*, const B&, C>, bool, void*> e;
 template <typename... Ts> class tuple;
 ```
 
-是不是一下子简洁了很多！这里的`typename... Ts`相当于一个声明，是说`Ts`不是一个类型，而是一个不定常的类型列表。同C语言的不定长参数一样，它通常只能放在参数列表的最后。看下面的例子：
+是不是一下子简洁了很多！这里的`typename... Ts`相当于一个声明，是说`Ts`不是一个类型，而是一个不定长的类型列表。同C语言的不定长参数一样，它通常只能放在参数列表的最后。看下面的例子：
 
 ```C++
 template <typename... Ts, typename U> class X {};              // (1) error!
